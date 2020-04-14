@@ -62,4 +62,37 @@ public class DemoTest {
         }
     }
 
+
+
+    public class Person{
+
+        private int age;
+
+        public int getAge() {
+            return age;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "age=" + age +
+                    '}';
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+    }
+
+
+    @Test
+    public void personTest(){
+
+        Person person1 = new Person();
+        Person person2 =person1;
+
+        person2.setAge(1);
+        System.out.println(person1);
+
+    }
 }
