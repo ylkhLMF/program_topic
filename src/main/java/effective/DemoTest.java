@@ -2,6 +2,11 @@ package effective;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * @author dreamFly
  * @date 23:45 2020/4/14
@@ -95,4 +100,31 @@ public class DemoTest {
         System.out.println(person1);
 
     }
+
+    @Test
+    public void test2(){
+
+
+        Stack<String> stack = new Stack<String>();
+        stack.push("1");
+        stack.push("2");
+        stack.push("3");
+        stack.push("4");
+        stack.push("5");
+        System.out.println(stack);
+
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
+
+        List<String> strings = new ArrayList<String>();
+        strings.add("1");
+        strings.add("2");
+        strings.add("3");
+        for (String string : strings) {
+            System.out.println(string);
+        }
+    }
+
+
 }
