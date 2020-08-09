@@ -6,8 +6,12 @@ import org.junit.Test;
 import reflection.study.bean.User;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author dreamFly
@@ -124,6 +128,57 @@ public class InvokeStudy {
         for (Annotation annotation1 : annotations) {
             System.out.println(annotation1);
         }
+    }
+
+    /**
+     * 获取Class类的构造方法
+     * @throws NoSuchMethodException
+     */
+    @Test
+    public void getClassConstructor() throws NoSuchMethodException {
+        Class<User> userClass = User.class;
+        // 获取Class中所有的公共构造方法(public修饰)
+        Constructor<?>[] constructors = userClass.getConstructors();
+        for (Constructor<?> constructor : constructors) {
+            System.out.println("获取构造方法的名称:"+constructor.getName());
+            // 获取构造方法的参数个数
+            int parameterCount = constructor.getParameterCount();
+            System.out.println("构造方法的参数个数:"+parameterCount);
+        }
+        // 获取所有的构造方法,包括私有的
+        Constructor<?>[] declaredConstructors = userClass.getDeclaredConstructors();
+        System.out.println("获取所有的构造方法个数:"+declaredConstructors.length);
+
+        // 根据指定的参数类型,获取构造方法
+        Constructor<User> declaredConstructor = userClass.getDeclaredConstructor(String.class,String.class,String.class,String.class);
+        System.out.println("有四个参数的构造方法:"+declaredConstructor.getName()+";参数个数是:"+declaredConstructor.getParameterCount());
+    }
+
+    /**
+     * 获取Class中的非构造方法
+     * @throws Exception
+     */
+    @Test
+    public void getMethod() throws Exception{
+
+        Class<?> aClass = Class.forName("reflection.study.bean.User");
+        // 获取该类所有的public修饰的公共方法,包含父类Object
+        Method[] methods = aClass.getMethods();
+        List<Method> asList = Arrays.asList(methods);
+        Constructor<?> declaredConstructor = aClass.getDeclaredConstructor(String.class, String.class, String.class, String.class);
+        for (Method method : asList) {
+            if (method.getName().equals(declaredConstructor.getName())){
+                System.out.println("包含构造方法");
+            }
+        }
+        // 根据方法名和参数类型获取指定的公共方法,参数为可变参数
+        Method getIdMethod = aClass.getMethod("getId");
+        System.out.println(getIdMethod.getName());
+
+        // 获取所有方法包括私有
+        Method[] declaredMethods = aClass.getDeclaredMethods();
+        // 获取单个方法
+        Method getId = aClass.getDeclaredMethod("getId");
     }
 
 }

@@ -25,6 +25,15 @@ public class User implements Serializable {
 
     public String address;
 
+    public User() {
+    }
+
+    private User(String id, String userName, String password, String address) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.address = address;
+    }
 
     public static class InnerUser{
 
