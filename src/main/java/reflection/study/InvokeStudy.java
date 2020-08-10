@@ -1,6 +1,8 @@
 package reflection.study;
 
 
+import jdk.nashorn.internal.runtime.logging.Logger;
+import lombok.Data;
 import org.junit.Test;
 import reflection.study.bean.User;
 
@@ -112,7 +114,7 @@ public class InvokeStudy {
     /**
      * 获取Class类中的注解
      */
-/*    @Test
+    @Test
     public void getClassAnnotation(){
         User user = new User();
         Class<? extends User> aClass = user.getClass();
@@ -127,7 +129,7 @@ public class InvokeStudy {
         for (Annotation annotation1 : annotations) {
             System.out.println(annotation1);
         }
-    }*/
+    }
 
     /**
      * 获取Class类的构造方法

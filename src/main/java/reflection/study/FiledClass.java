@@ -56,13 +56,21 @@ public class FiledClass {
         System.out.println(userIdParam.get(user));
 
     }
-
+    /**
+     * @author liumf
+     * @description 给私有属性设置值
+     * @params
+     * @return
+     * @time 2020/8/10 16:40
+     * @version V1.0
+     */
     @Test
     public void TestSet() throws NoSuchFieldException, IllegalAccessException {
         System.out.println("反射前:"+user);
         Field userName = userClass.getDeclaredField("userName");
         // 开启暴力反射,否则无法设置私有属性的值
         userName.setAccessible(true);
+        // 设置属性值
         userName.set(user,"李四");
         System.out.println("反射后:"+user);
     }

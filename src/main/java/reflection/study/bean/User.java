@@ -1,5 +1,6 @@
 package reflection.study.bean;
 
+import jdk.nashorn.internal.runtime.logging.Logger;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +13,7 @@ import java.io.Serializable;
  * @description
  */
 @Data
-
+@Logger
 @Component
 public class User implements Serializable {
 
@@ -21,6 +22,10 @@ public class User implements Serializable {
     private String password;
 
     public String address;
+
+    private void testPrivate(){
+        System.out.println("私有方法调用");
+    }
 
     public User() {
     }
