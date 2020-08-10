@@ -14,7 +14,7 @@ public class SpringTest {
 
 
 
-
+    @SuppressWarnings("all")
     public static void main(String[] args) {
 
         // 第一种目前不推荐使用了

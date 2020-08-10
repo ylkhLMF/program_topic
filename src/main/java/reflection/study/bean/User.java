@@ -1,9 +1,6 @@
 package reflection.study.bean;
 
-import com.sun.istack.internal.NotNull;
-import jdk.nashorn.internal.runtime.logging.Logger;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -15,7 +12,7 @@ import java.io.Serializable;
  * @description
  */
 @Data
-@Logger
+
 @Component
 public class User implements Serializable {
 
@@ -28,7 +25,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    private User(String id, String userName, String password, String address) {
+    public User(String id, String userName, String password, String address) {
         this.id = id;
         this.userName = userName;
         this.password = password;
