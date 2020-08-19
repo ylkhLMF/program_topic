@@ -1,16 +1,20 @@
-package generic;
+package utils;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class GenericClassTest {
+/**
+ * @author dreamFly
+ * @date 21:54 2020/8/19
+ * @className ValidatedUtils
+ * @description
+ */
 
+public class ValidatedUtils {
 
     public static void main(String[] args) throws Exception {
         String str1 ="";
@@ -19,10 +23,10 @@ public class GenericClassTest {
         String str4="4";
 
         Map<String, String> validatedMap = new HashMap(16){{
-           put("Str1",str1);
-           put("str2",str2);
-           put("Str3",str3);
-           put("Str4",str4);
+            put("Str1",str1);
+            put("str2",str2);
+            put("Str3",str3);
+            put("Str4",str4);
         }};
         if (StringUtils.isBlank(str1)){
             System.out.println("为空"+str1);
@@ -32,7 +36,7 @@ public class GenericClassTest {
 
 
     }
-    static String validatedParams(Map<String,String> map) {
+    public static String validatedParams(Map<String,String> map) {
 
         if (CollectionUtils.isEmpty(map)){
             return null;
