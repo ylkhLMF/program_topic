@@ -74,6 +74,13 @@
         </dependency>
         <!--版本2 _ 结束-->
         <!--辅助工具结束-->
+
+        <!--fastJson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.9</version>
+        </dependency>
     </dependencies>
 
 
