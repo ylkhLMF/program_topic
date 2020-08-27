@@ -32,6 +32,7 @@ public class StreamOperate {
         System.out.println("正常排序前:" + books);
         books = books.stream().sorted((e1, e2) -> Integer.valueOf(e2.getId()) - Integer.valueOf(e1.getId())).collect(Collectors.toList());
         System.out.println("倒叙排序后:" + books);
+        //Comparator.comparing(Book::getId)默认排序方法,针对整型
         List<Book> positiveOrderList = books.stream().sorted(Comparator.comparing(Book::getId)).collect(Collectors.toList());
         System.out.println("正序排序后:" + positiveOrderList);
     }
