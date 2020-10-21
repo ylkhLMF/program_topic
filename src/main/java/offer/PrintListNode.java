@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * @author dreamFly
+ * @author liumf
  * @date 0:20 2020/4/15
  * @className PrintListNode
  * @description 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
@@ -68,6 +68,7 @@ public class PrintListNode {
                     "val=" + val +
                     ", next=" + next +
                     '}';
+
         }
     }
 
