@@ -7,7 +7,7 @@ public class AsiainfoLoginTest {
 
     public static void main(String[] args) {
 
-        AsiainfoLogin asiainfoLogin = new AsiainfoLogin();
+
     }
 
 }

@@ -1,5 +1,7 @@
 package effective;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -26,8 +28,8 @@ public class DemoTest {
         int num =4;
         int y;
         y = num<<2;
-        System.out.println(y);
-
+        int expected = 4;
+        Assert.assertEquals(expected,0,y);
     }
 
     @Test
@@ -43,6 +45,20 @@ public class DemoTest {
 
         System.out.println("node1="+node1);
         System.out.println("node2="+node2);
+    }
+
+    public static void main(String[] args) {
+        String  s = "{\n" +
+                "  \"billId\": \"432423\",\n" +
+                "  \"billId2\": \"34324324\",\n" +
+                "  \"billId4\": \"324234\",\n" +
+                "  \"billId5\": \"234234\",\n" +
+                "  \"billIde\": \"324234\",\n" +
+                "  \"billId3\": \"334324324\"\n" +
+                "}" ;
+
+
+
     }
 
 
