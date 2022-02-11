@@ -4,6 +4,18 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import fastJson.pojo.User;
 import fastJson.single.SingleSerializeConfig;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
+
+import javax.accessibility.Accessible;
+import javax.xml.crypto.Data;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Copyright: Copyright (c) 2020 AsiaInfo
@@ -22,23 +34,12 @@ import fastJson.single.SingleSerializeConfig;
 public class Test {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] val) {
 
-        // SerializeConfig config = SingleSerializeConfig.getSerializeConfig().UP();
-        // User user = new User();
-        // user.setPassWord("111");
-        // user.setUserName("liu");
-        // String s = JSON.toJSONString(user, config);
-        // System.out.println(s);
-        String methodName = getMethodName();
+        Object  var = 10 ;
 
-        System.out.println(methodName);
-
-    }
-
-    public static String getMethodName(){
-        String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
-        return methodName;
+        String str = (String)var;
+        System.out.println(str);
 
     }
 }
