@@ -24,7 +24,7 @@ public class User implements Serializable {
     public String address;
 
     private void testPrivate(){
-        System.out.println("私有方法调用");
+        System.out.println("无参私有方法调用");
     }
 
     public User() {

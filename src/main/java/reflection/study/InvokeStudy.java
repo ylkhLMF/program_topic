@@ -32,8 +32,9 @@ public class InvokeStudy {
     @Test
     public void getClassName() throws ClassNotFoundException {
 
-        // 获取Class类方法一:
+        // 获取Class类方法一:根据全限定类名获取class对象
         Class<?> aClass = Class.forName("reflection.study.bean.User");
+        System.out.println(aClass);
         System.out.println("获取全类名:"+aClass.getName());
         System.out.println("获取类名:"+aClass.getSimpleName());
         // 获取Class类方法二:
@@ -43,6 +44,12 @@ public class InvokeStudy {
         User user = new User();
         Class<? extends User> cUser = user.getClass();
         System.out.println(cUser.getSimpleName());
+
+        //方法四:基本数据类型的包装类都会有个Type属性
+
+        Class<Integer> type = Integer.TYPE;
+        System.out.println(type);
+
     }
 
     /**
