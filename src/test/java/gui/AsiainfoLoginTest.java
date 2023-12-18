@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import static org.junit.Assert.*;
 
-public class AsiainfoLoginTest {
+public class LoginTest {
 
 
     public static void main(String[] args) {
