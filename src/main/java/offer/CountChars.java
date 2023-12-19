@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: CountChars
  * @Description: 统计字符串中字符出现的次数 使用map

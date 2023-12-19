@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 import java.util.HashSet;
 
 /**
- * Copyright: Copyright (c) 2021 AsiaInfo
+ * Copyright: Copyright (c) 2021 Dreamfly
  *
  * @ClassName: JsonFlieTest
  * @Description:

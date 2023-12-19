@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: FastJsonBug
  * @Description:

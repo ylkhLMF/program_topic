@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: GamePoker
  * @Description: 扑克小游戏

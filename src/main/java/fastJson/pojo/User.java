@@ -3,7 +3,7 @@ package fastJson.pojo;
 import lombok.Data;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: User
  * @Description:

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Copyright: Copyright (c) 2021 AsiaInfo
+ * Copyright: Copyright (c) 2021 Dreamfly
  *
  * @ClassName: HashCodeTest
  * @Description:

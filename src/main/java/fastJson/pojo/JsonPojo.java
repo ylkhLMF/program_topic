@@ -3,7 +3,7 @@ package fastJson.pojo;
 import com.alibaba.fastjson.annotation.JSONField;
 
 /**
- * Copyright: Copyright (c) 2021 AsiaInfo
+ * Copyright: Copyright (c) 2021 Dreamfly
  *
  * @ClassName: JsonPojo
  * @Description:

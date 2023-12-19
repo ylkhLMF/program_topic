@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Stack;
 
 /**
- * Copyright: Copyright (c) 2021 AsiaInfo
+ * Copyright: Copyright (c) 2021 Dreamfly
  *
  * @ClassName: ReverseString
  * @Description:

@@ -3,7 +3,7 @@ package fastJson;
 import lombok.Data;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: Output
  * @Description:

@@ -5,7 +5,7 @@ import com.alibaba.fastjson.serializer.SerializeConfig;
 
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: SingleSerializeConfig
  * @Description:

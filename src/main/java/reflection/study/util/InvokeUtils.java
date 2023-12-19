@@ -3,7 +3,7 @@ package reflection.study.util;
 import lombok.Synchronized;
 
 /**
- * Copyright: Copyright (c) 2020 AsiaInfo
+ * Copyright: Copyright (c) 2020 Dreamfly
  *
  * @ClassName: InvokeUtils
  * @Description:
